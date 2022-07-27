@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="The 1st International Fuzzing Workshop (FUZZING) 2022 welcomes all researchers,
+        scientists, engineers and practitioners to present their latest research findings,
+        empirical analyses, techniques, and applications in the area of fuzzing and
+        software testing for automated bug finding.">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Fuzzing, preregistration, software testing, benchmarking">
+    <title>FUZZING'22 Workshop @ NDSS</title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="https://www.ndss-symposium.org/wp-content/uploads/20170228_062849.jpg" alt="Fuzzing'22">
+        <div class="top-left">
+            <span class="title1">Fuzzing</span> <span class="title2">workshop</span> <span class="year">2022</span>
+        </div>
+        <div class="bottom-right">
+            April 24, 2022 <br> Co-located with NDSS'22 @ San Diego, California
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a class="current" title="Fuzzing'22 Home Page" href="index.html">Home</a>
+            </td>
+            <!--
+                 <td class="navigation">
+                 <a title="Register for Fuzzing'22" href="registration">Registration</a>
+                 </td>
+            -->
+            <td class="navigation">
+                <a title="Workshop Program" href="program.html">Program</a>
+            </td>
+            <!-- <td class="navigation">
+                 <a title="Directions to the Conference" href="directions">Directions</a>
+                 </td>
+            -->
+            <td class="navigation">
+                <a title="Important Dates" href="index.html#dates">Dates</a>
+            </td>
+            <td class="navigation">
+                <a title="FAQ" href="index.html#faq">FAQ</a>
+            </td>
+            <!-- <td class="navigation">
+                 <a title="Submission Guidelines" href="index.html#guides">Submission</a>
+                 </td> -->
+            <td class="navigation">
+                <a title="Program Committee" href="index.html#pc">Program Committee</a>
+            </td>
+
+        </tr>
+    </table>
+
+
+    <h2>Fuzzing'22 Artifact Evaluation</h2>
+
+    <p>
+        <ul>
+            <li style="list-style-type: circle"><a href="artifacts.html#goals">Goal of the Artifact Evaluation</a></li>
+            <li style="list-style-type: circle"><a href="artifacts.html#badges">Badges and their meaning</a></li>
+            <li style="list-style-type: circle"><a href="artifacts.html#dates">Important Dates</a></li>
+            <li style="list-style-type: circle"><a href="artifacts.html#process">Artifact Evaluation Process</a></li>
+            <li style="list-style-type: circle"><a href="artifacts.html#submission">Submission Instructions</a></li>
+            <li style="list-style-type: circle"><a href="artifacts.html#review">Reviewing Guidelines</a></li>
+            <li style="list-style-type: circle"><a href="artifacts.html#more">Additional Information</a></li>
+            <li style="list-style-type: circle"><a href="artifacts.html#committee">Artifact Evaluation Committee</a></li>
+        </ul>
+    </p>
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="goals">Goal of the Artifact Evaluation</h3>
+
+    <p>
+      The two main goals of the artifact evaluation are:
+    <ol>
+      <li style="margin-left: 80px;">the consistency check between the results reported in the research paper and the submitted artifact, and</li>
+      <li style="margin-left: 80px;">the evaluation of the provided artifact concerning the official ACM evaluation badges.</li>
+    </ol>
+    </p>
+    <p>
+    All submissions should aim to get <b>all three</b> available badges (<i>available, functional, reusable</i>) to ensure the reproducibility of their research.
+    </p>
+
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="badges">Badges and their meaning</h3>
+    <p>
+    Since the accepted full papers in <a href="https://fuzzingworkshop.github.io/">Fuzzing'2022</a> will be published in <a href="https://dl.acm.org/journal/tosem">TOSEM</a>, we have the option to assign the official ACM badges for Available, Functional, and Reusable (<a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current">https://www.acm.org/publications/policies/artifact-review-and-badging-current</a>).
+    </p>
+
+    <h4>Artifacts Available v1.1</h4>
+    <img src="https://www.acm.org/binaries/content/gallery/acm/publications/artifact-review-v1_1-badges/artifacts_available_v1_1.png" alt="Artifacts Available v1.1" width="100" style="float:left; margin: 0px 30px 30px 30px;" />
+    <p>
+    Author-created artifacts relevant to this paper have been placed on a publicly accessible archival repository. A DOI or link to this repository along with a unique identifier for the object is provided.
+    </p>
+
+    <h4>Artifacts Evaluated - Functional v1.1</h4>
+    <img src="https://www.acm.org/binaries/content/gallery/acm/publications/artifact-review-v1_1-badges/artifacts_evaluated_functional_v1_1.png" alt="Artifacts Available v1.1" width="100" style="float:left; margin: 0px 30px 30px 30px;" />
+    <p>
+    The artifacts associated with the research are found to be documented, consistent, complete, exercisable, and include appropriate evidence of verification and validation.
+    </p>
+
+    <h4>Artifacts Evaluated - Reusable v1.1</h4>
+    <img src="https://www.acm.org/binaries/content/gallery/acm/publications/artifact-review-v1_1-badges/artifacts_evaluated_reusable_v1_1.png" alt="Artifacts Available v1.1" width="100" style="float:left; margin: 0px 30px 30px 30px;" />
+    <p>
+    Functional + The artifacts associated with the paper are of a quality that significantly exceeds minimal functionality. That is, they have all the qualities of the Artifacts Evaluated - Functional level, but, in addition, they are very carefully documented and well-structured to the extent that reuse and repurposing is facilitated. In particular, norms and standards of the research community for artifacts of this type are strictly adhered to.
+    </p>
+    <br>
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="dates">Important Dates</h3>
+    <p>
+    <table style="border-spacing: 5px; padding-left: 50px;">
+      <tr>
+        <th style="width:50%; border-bottom: 1px solid #ddd;"><b>Phase/Milestone</b></th>
+        <th style="border-bottom: 1px solid #ddd;"><b>Date (in AoE)</b></th>
+      </tr>
+      <tr>
+        <td>Full journal paper submission (incl. experiments and
+        artifact)</td>
+        <td>1 September 2022</td>
+      </tr>
+      <tr>
+        <td>(Phase 1) Test phase (installation, instructions, etc.)</td>
+        <td>5-9 September 2022</td>
+      </tr>
+      <tr>
+        <td>Deadline for clarifications by the authors</td>
+        <td>12 September 2022</td>
+      </tr>
+      <tr>
+        <td>(Phase 2) First evaluation round</td>
+        <td>13-27 September</td>
+      </tr>
+      <tr>
+        <td>Deadline for author response and artifact improvements</td>
+        <td>2 October 2022</td>
+      </tr>
+      <tr>
+        <td>(Phase 3) Second evaluation round (if needed)</td>
+        <td>3-10 October</td>
+      </tr>
+    </table>
+    </p>
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="process">Artifact Evaluation Process</h3>
+    <p>
+    This artifact evaluation is performed in three phases:
+    <br>
+    <br>
+    <b>(Phase 1) Test phase:</b>
+    The Artifact Evaluation Committee (AEC) may contact the authors within the Test Phase to request clarifications on the basic installation and start-up procedures or to resolve simple installation problems. Given the short review time available, the authors are expected to respond within a 48-hour period but no later than September 12, 2022. Authors may update their research artifact after submission only for changes requested by reviewers and only until September 12, 2022. The authors submitting an open-source repository link are expected to give a tag to time-stamp your submission.
+    <br>
+    <br>
+    <b>(Phase 2) First evaluation round:</b> After the test phase, the AEC will conduct the full artifact evaluation and submit reviews and badge recommendations for each artifact. Afterwards, there will be the possibility for the authors to revise their artifacts and improve them according to the reviewer's feedback. The author response and artifact improvement deadline is October 2, 2022.
+    <br>
+    <br>
+    <b>(Phase 3) Second evaluation round (if needed):</b> If the AEC requested changes with their Phase 2 feedback, the AEC would conduct another round of reviews for the improved artifacts. Afterwards, the decision on the artifact badges will be finalized.
+    <br>
+    <br>
+    <i>Note that HotCRP will serve as the main communication medium between authors and reviewers. The authors are expected to respond timely to the reviewer's questions, in particular, during Phase 1.</i>
+    </p>
+
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="submission">Submission Instructions</h3>
+
+    <div style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em; margin-left: 50px;">
+    By <b>September 1, 2022</b>, submit your research artifact at the <a href="https://mc.manuscriptcentral.com/tosem">Manuscript Central TOSEM website</a> <b>(RCR paper type)</b> and add
+      <ul>
+        <li style="list-style-type: circle">the <b>DOI</b> for your artifact,</li>
+        <li style="list-style-type: circle">a <b>short paper</b> as a PDF describing your artifact, and</li>
+        <li style="list-style-type: circle">a <b>copy</b> of your <b>paper submission</b> as a PDF.</li>
+      </ul>
+    Additionally, we require that all authors submit the same artifact to our <b>HotCRP</b> instance: <a href="https://fuzzing22-ae.hotcrp.com">https://fuzzing22-ae.hotcrp.com</a>. HotCRP will be the main communication medium between authors and reviewers during our interactive reviewing process.
+    </div>
+
+    <p>
+    Authors must perform the following steps to submit an artifact:
+    <ol>
+      <li style="margin-left: 80px;">Prepare the artifact</li>
+      <li style="margin-left: 80px;">Making the artifact available</li>
+      <li style="margin-left: 80px;">Documenting the artifact</li>
+      <li style="margin-left: 80px;">Submit the artifact</li>
+    </ol>
+    </p>
+
+    <h4>1. Prepare the artifact</h4>
+    <div style="border:3px; border-style:solid; border-color:#bbb; padding: 1em; margin-left: 50px;">
+    <b>Attention - </b>
+    To ease our review process, we recommend authors provide a docker image with Ubuntu 20.04 (amd64):
+    <div style="font-family:courier;">From docker:focal</div>
+    <br>
+    Please ensure any third-party library installations are included in your steps.
+    </div>
+    <p>
+    The configuration and installation of the artifact should take <b>less than 30 minutes</b>. Otherwise, the artifact is unlikely to be endorsed.
+    <br>
+    <br>
+    The artifact shall include an installation package so the tool can be installed and run in commonly available environments. Provide enough associated instruction, code, and data such that some CS person with a reasonable knowledge of scripting, build tools, etc., could install, build, and run the code. If the artifact contains or requires a special tool or any other non-trivial piece of software, the authors shall provide a VirtualBox VM image or a Docker container image with a working environment containing the artifact and all the necessary tools.
+    <br>
+    <br>
+    We expect the artifacts to be vetted on a clean machine before submission.
+    </p>
+
+    <h4>2. Making the artifact available</h4>
+    <p>
+    The authors shall make the packaged artifact <b>available</b> so that the readers of the RCR report can access it. The digital artifact should be available on a long-term archival platform that comply with the FAIR principles (findable, accessible, interoperable, reusable, more details can be found here <a href="https://www.nature.com/sdata/policies/repositories#general">https://www.nature.com/sdata/policies/repositories#general</a>). We strongly recommend either <a href="https://www.figshare.com">https://www.figshare.com</a> or <a href="https://www.zenodo.org">https://www.zenodo.org</a>.
+    </p>
+
+    <h4>3. Documenting the artifact</h4>
+    <p>
+    The package shall include a documentation explaining how to (i) obtain the artifact package, (ii) unpack the artifact, (iii) get started, and (iv) use the artifacts. The artifact submission shall only describe the technicalities of the artifacts and uses of the artifact that are not already described in the RCR report and associated paper.
+    </p>
+
+    <p>
+    The submission should contain the following documents (in plain text or pdf format) in a zip archive:
+    <ul>
+      <li style="list-style-type: circle">
+      A <b>README</b> file describing what the artifact does and where it can be obtained (with hidden links and access password if necessary). Also, there should be a clear description of how to repeat/replicate/reproduce the results presented in the paper. Artifacts that focus on data should clearly describe all aspects relevant to understand the context, data provenance, ethical and legal statements (as long as relevant), and storage requirements. Artifacts that focus on software should clearly describe all aspects relevant to how to install and use it (and be accompanied by a small example).
+      </li>
+
+      <li style="list-style-type: circle">
+      A <b>REQUIREMENTS</b> file for artifacts that focus on software. This file should, in principle, describe all aspects of hardware environment requirements (e.g., performance, storage, or non-commodity peripherals) and software environments (e.g., Docker, VM, and operating system), as well as a requirements.txt with explicit versioning information (e.g., for Python-only environments), when relevant. Any deviation from standard environments needs to be reasonably justified.
+      </li>
+
+      <li style="list-style-type: circle">
+      A <b>STATUS</b> file stating what kind of badge(s) the authors are applying for and why the authors believe that the artifact deserves that badge(s). Note that all submissions need to apply for the "available" badge. Applying for the "functional" and "reusable" badges is strongly recommended.
+      </li>
+
+      <li style="list-style-type: circle">
+      A <b>LICENSE</b> file describing the distribution rights. Due to the requirement of the “available” badge, that license must be some form of open source license.
+      </li>
+
+      <li style="list-style-type: circle">
+      An <b>INSTALL</b> file with installation instructions. These instructions should include notes illustrating a very basic usage example or a method to test the installation. This could be, for instance, on what output to expect that confirms that the code is installed and working; and that the code is doing something interesting and useful.
+      </li>
+    </ul>
+    </p>
+
+    <h4>4. Submit the artifact</h4>
+    <p>
+    By September 1, 2022, submit your research artifact at the <a href="https://mc.manuscriptcentral.com/tosem">Manuscript Central TOSEM website</a> (choosing the <b>RCR paper type</b>) and by uploading the abstract describing your artifact. The abstract should include the DOI for your artifact, the paper title, the purpose of the research artifact, the badge(s) you are claiming, and the technology skills assumed by the reviewer evaluating the artifact. Please also mention if running your artifact requires specific Operation Systems or other environments.
+    </p>
+
+    <p>
+    After submitting your artifact to TOSEM, please also upload the same artifact to our <b>HotCRP</b> instance: <a href="https://fuzzing22-ae.hotcrp.com">https://fuzzing22-ae.hotcrp.com</a>.
+    </p>
+
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="review">Reviewing Guidelines</h3>
+    <p>
+      For AEC members, we are currently creating custom reviewing guidelines, which will be based on the ESEC/FSE’2021 for the AE guidelines: <a href="https://2021.esec-fse.org/getImage/orig/fse_artifacts_submission_reviewing_guidelines.pdf">https://2021.esec-fse.org/getImage/orig/fse_artifacts_submission_reviewing_guidelines.pdf</a>.
+
+    </p>
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="more">Additional Information</h3>
+    <p>
+    If you need more input on how to produce a high-quality artifact, please check out the following additional resources:
+    </p>
+    <ul>
+      <li style="list-style-type: circle">
+        <a href="https://blog.padhye.org/Artifact-Evaluation-Tips-for-Authors/">the blog post by Rohan Padhye</a>, and
+      </li>
+      <li style="list-style-type: circle">
+        the <a href="https://github.com/csartifacts/resources">AE resource collection by Manuel Rigger</a>.
+      </li>
+    </ul>
+    <p>
+    In case of any questions, please do not hesitate to contact <a href="mailto:yannic.noller@nus.edu.sg">us</a>!
+    </p>
+
+
+    <hr style="border-top: 3px solid #bbb;"/>
+    <h3 id="committee">Artifact Evaluation Committee</h2>
+    <p>
+    <ul>
+        <li>Chair: <a href="https://yannicnoller.github.io/">Yannic Noller</a> (National University of Singapore)</li>
+	<br>
+	<li><a href="https://www.linkedin.com/in/ackermanndavid/">David Ackermann</a>, ETH Zurich</li>
+	<li>Vincent Ahlrichs, Fraunhofer AISEC</li>
+	<li><a href="https://carolin-brandt.de">Carolin Brandt</a>, Delft University of Technology</li>
+	<li><a href="https://inf.ethz.ch/people/person-detail.MjI5Njk4.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html">Alexandra Bugariu</a>, ETH Zurich</li>
+	<li><a href="https://srg.doc.ic.ac.uk/people/karine-evenmendoza/">Karine Even-Mendoza</a>, Imperial College London</li>
+	<li><a href="https://rahul.gopinath.org">Rahul Gopinath</a>, University of Sydney</li>
+	<li><a href="https://people.epfl.ch/ahmad.hazimeh?lang=en">Ahmad Hazimeh</a>, EPFL</li>
+	<li><a href="https://cecs.anu.edu.au/people/adrian-herrera">Adrian Herrera</a>, Australian National University</li>
+	<li><a href="https://www.lukasczyk.name">Stephan Lukasczyk</a>, University of Passau</li>
+	<li><a href="https://numairmansur.github.io">Numair Mansur</a>, MPI-SWS</li>
+	<li><a href="https://mengrj.github.io">Ruijie Meng</a>, National University of Singapore</li>
+	<li><a href="https://rshariffdeen.com">Ridwan Shariffdeen</a>, National University of Singapore</li>
+	<li><a href="http://scf.usc.edu/~jingbow/">Jingbo Wang</a>, University of Southern California</li>
+	<li><a href="https://www.linkedin.com/in/chenxi-zhang-493b7b18">Chenxi Zhang</a>, Fudan University</li>
+    </ul>
+    </p>
+
+    <!--
+    <table class="sponsors">
+        <tr>
+            <td class="sponsor">
+                <a href="http://www.eyebleach.me/">
+                    <img src="assets/kitten1.jpg" alt="First Sponsor Name">
+                </a>
+            </td>
+            <td class="sponsor">
+                <a href="http://www.eyebleach.me/">
+                    <img src="assets/kitten2.jpg" alt="Second Sponsor Name" style="width: 80%">
+                </a>
+            </td>
+            <td class="sponsor">
+                <a href="http://www.eyebleach.me/">
+                    <img src="assets/kitten3.jpg" alt="Third Sponsor Name">
+                </a>
+            </td>
+        </tr>
+    </table>
+-->
+    <table class="footer">
+        <tr>
+            <td class="footer">Design by <a target="_blank" href="http://math.ucr.edu/~mpierce/">Mike Pierce</a></td>
+            <td class="footer">&copy; Conference Organizers</td>
+        </tr>
+    </table>
+
+    </body>
+</html>
