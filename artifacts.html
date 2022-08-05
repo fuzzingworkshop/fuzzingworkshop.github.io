@@ -70,6 +70,8 @@
             <li style="list-style-type: circle"><a href="artifacts.html#dates">Important Dates</a></li>
             <li style="list-style-type: circle"><a href="artifacts.html#process">Artifact Evaluation Process</a></li>
             <li style="list-style-type: circle"><a href="artifacts.html#submission">Submission Instructions</a></li>
+            <li style="list-style-type: circle;margin-left: 40px;"><a href="artifacts.html#instructions-report">Instructions for the short paper</a></li>
+            <li style="list-style-type: circle;margin-left: 40px;"><a href="artifacts.html#instructions-artifact">Instructions for the artifact</a></li>
             <li style="list-style-type: circle"><a href="artifacts.html#review">Reviewing Guidelines</a></li>
             <li style="list-style-type: circle"><a href="artifacts.html#more">Additional Information</a></li>
             <li style="list-style-type: circle"><a href="artifacts.html#committee">Artifact Evaluation Committee</a></li>
@@ -185,6 +187,35 @@
     Additionally, we require that all authors submit the same artifact to our <b>HotCRP</b> instance: <a href="https://fuzzing22-ae.hotcrp.com">https://fuzzing22-ae.hotcrp.com</a>. HotCRP will be the main communication medium between authors and reviewers during our interactive reviewing process.
     </div>
 
+    <h4 id="instructions-report">Instructions for the short paper</h4>
+
+    <p>
+    The short paper, i.e., the RCR report, should be titled: "[Paper Title] - RCR Report" where "[Paper Title]" is the title of the submitted TOSEM paper. RCR Reports shall use <a href="https://www.acm.org/publications/authors/submissions">ACM journal format of short papers</a>, and preferably comply with the following suggested structure:
+    </p>
+    <ul>
+      <li style="list-style-type: circle">Abstract: Summary of the artifact and its relation to the paper</li>
+      <li style="list-style-type: circle">Overview</li>
+          <li style="list-style-type: circle;margin-left: 40px;">Paper:</li>
+            <li style="list-style-type: circle;margin-left: 80px;">Summary of the submitted TOSEM Paper</li>
+            <li style="list-style-type: circle;margin-left: 80px;">Key claims in the submitted TOSEM paper</li>
+            <li style="list-style-type: circle;margin-left: 80px;">Key results in the submitted TOSEM paper</li>
+          <li style="list-style-type: circle;margin-left: 40px;">Artifact(s):</li>
+            <li style="list-style-type: circle;margin-left: 80px;">Table showing which artifacts are made available, where they are located (link/DOI), which license is used (e.g., CC-BY).</li>
+            <li style="list-style-type: circle;margin-left: 80px;">Evidence generation: Prototype / tool, benchmarks, questionnaires</li>
+            <li style="list-style-type: circle;margin-left: 80px;">Generated evidence: empirical results, survey results, labeled data,..</li>
+            <li style="list-style-type: circle;margin-left: 80px;">Data analysis: Jupyter notebook, R/Pandas script..</li>
+      <li style="list-style-type: circle">Prerequisites and Requirements</li>
+          <li style="list-style-type: circle;margin-left: 40px;">E.g., Hardware or OS requirements</li>
+          <li style="list-style-type: circle;margin-left: 40px;">OS req(e.g., platform, [pinned] dependencies)</li>
+      <li style="list-style-type: circle">Setup (e.g., installation instructions)</li>
+      <li style="list-style-type: circle">Steps to Reproduce</li>
+        <li style="list-style-type: circle;margin-left: 40px;">How to generate the data (if possible)?</li>
+        <li style="list-style-type: circle;margin-left: 40px;">How to analyze the data (if possible)?</li>
+
+    </ul>
+
+    <h4 id="instructions-artifact">Instructions for the artifact</h4>
+
     <p>
     Authors must perform the following steps to submit an artifact:
     <ol>
@@ -195,7 +226,7 @@
     </ol>
     </p>
 
-    <h4>1. Prepare the artifact</h4>
+    <h5><b>1. Prepare the artifact</b></h5><br>
     <div style="border:3px; border-style:solid; border-color:#bbb; padding: 1em; margin-left: 50px;">
     <b>Attention - </b>
     To ease our review process, we recommend authors provide a docker image with Ubuntu 20.04 (amd64):
@@ -213,12 +244,12 @@
     We expect the artifacts to be vetted on a clean machine before submission.
     </p>
 
-    <h4>2. Making the artifact available</h4>
+    <h5><b>2. Making the artifact available</b></h5>
     <p>
     The authors shall make the packaged artifact <b>available</b> so that the readers of the RCR report can access it. The digital artifact should be available on a long-term archival platform that comply with the FAIR principles (findable, accessible, interoperable, reusable, more details can be found here <a href="https://www.nature.com/sdata/policies/repositories#general">https://www.nature.com/sdata/policies/repositories#general</a>). We strongly recommend either <a href="https://www.figshare.com">https://www.figshare.com</a> or <a href="https://www.zenodo.org">https://www.zenodo.org</a>.
     </p>
 
-    <h4>3. Documenting the artifact</h4>
+    <h5><b>3. Documenting the artifact</b></h5>
     <p>
     The package shall include a documentation explaining how to (i) obtain the artifact package, (ii) unpack the artifact, (iii) get started, and (iv) use the artifacts. The artifact submission shall only describe the technicalities of the artifacts and uses of the artifact that are not already described in the RCR report and associated paper.
     </p>
@@ -248,7 +279,7 @@
     </ul>
     </p>
 
-    <h4>4. Submit the artifact</h4>
+    <h5><b>4. Submit the artifact</b></h5>
     <p>
     By September 1, 2022, submit your research artifact at the <a href="https://mc.manuscriptcentral.com/tosem">Manuscript Central TOSEM website</a> (choosing the <b>RCR paper type</b>) and by uploading the abstract describing your artifact. The abstract should include the DOI for your artifact, the paper title, the purpose of the research artifact, the badge(s) you are claiming, and the technology skills assumed by the reviewer evaluating the artifact. Please also mention if running your artifact requires specific Operation Systems or other environments.
     </p>
