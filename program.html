@@ -71,15 +71,28 @@
     </table>
 
 
-    <h2>Program Schedule</h2>
-    <!--<i>All times are local time in Seattle, WA, United States (GMT-7 / PDT).</i>--->
+    <h2>Program Schedule (Tentative)</h2>
+    <i>All times are local time in Seattle, WA, United States (GMT-7 / PDT).</i>
 
-    The program is still under construction, but we will have a <b>full-day</b> program featuring <b>two keynotes</b> and a <b>community/panel discussion</b>.
     <br>
     <br>
+
 
     <table>
         <tr>
+            <td class="date">
+                9:00am
+            </td>
+            <td class="title">
+                Welcome and Introductions
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                9:15am
+            </td>
             <td class="title-special">
                 <b>Keynote 1</b>: Three Colours of Fuzzing: Reflections and Open Challenges
             </td>
@@ -89,114 +102,28 @@
                 Cristian Cadar (Imperial College London)
             </td>
         </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="title-special">
-                <b>Keynote 2</b>: Rich coverage signal and the consequences for scaling
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Kostya Serebryany (Google)
-            </td>
-        </tr>
-    </table>
-
-    
-    <!--
-    <table>
-        <tr>
-            <td class="date">
-                9:00am
-            </td>
-            <td class="title">
-                TBA
-            </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                9:10am
-            </td>
-            <td class="title-special">
-                <b>Keynote 1</b>: Fuzzing: A Tale of Two Cultures
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Andreas Zeller (CISPA Helmholtz Center for Information Security)
-            </td>
-        </tr>
         <tr><td class="abstract">
-            <b>Abstract</b>: Do you fuzz your own program, or do you fuzz someone
-            else's program? The answer to this question has vast consequences on
-            your view on fuzzing. Fuzzing someone else's program is the typical
-            adverse "security tester" perspective, where you want your fuzzer to
-            be as automatic and versatile as possible. Fuzzing your own code,
-            however, is more like a traditional tester perspective, where you may
-            assume some knowledge about the program and its context, but may also
-            want to _exploit_ this knowledge - say, to direct the fuzzer to
-            critical locations.<br/>
-            <br/>
-            
-            In this talk, I detail these differences in perspectives and
-            assumptions, and highlight their consequences for fuzzer design and
-            research. I also highlight cultural differences in the research
-            communities, and what happens if you submit a paper to the wrong
-            community. I close with an outlook into our newest frameworks, set
-            to reconcile these perspectives by giving users unprecedented control
-            over fuzzing, yet staying fully automatic if need be.<br/>
-            <br/>
+            <b>Abstract</b>:
+            In this talk, I will reflect on my experiences designing and applying different forms of fuzzing (whitebox, greybox and blackbox) to various  types of software (file processing applications, network servers, compilers, document readers, etc.) and software engineering problems (patch testing, test suite augmentation, refactoring, etc.)<br/>
 
-            <b>Bio</b>: Andreas Zeller is faculty at the CISPA Helmholtz Center
-            for Information Security and professor for Software Engineering at
-            Saarland University, both in Saarbrücken, Germany. His research on
-            automated debugging, mining software archives, specification mining,
-            and security testing has won several awards for its impact in academia
-            and industry. Zeller is an ACM Fellow, an IFIP Fellow, an ERC Advanced
-            Grant Awardee, and holds an ACM SIGSOFT Outstanding Research Award.<br/>
-            <br/>
-
-            <b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
+            While the goal of fuzzing is to find bugs, our objective as fuzzing researchers and practitioners should be to improve the reliability, security and quality of software.  I therefore argue that we need to pay closer attention to how fuzzing is integrated into the software development process and how we can use fuzzing to help with other software engineering tasks.
             <br/><br/>
 
-            <div style="color:#808080"><i>Session Chair: Baishakhi Ray (Columbia University)</i></div>
-        </td></tr>
-    </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                10:00am
-            </td>
-            <td class="title-special">
-                Session 1
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <div style="color:#808080"><b>Session Chair</b>: László Szekeres (Google)</li> </div>
-            </td>
-        </tr>
-        <tr><td class="abstract">
-            <b>Dissecting American Fuzzy Lop - A FuzzBench Evaluation
-                <a href="papers/DissectingAFL-Slides.pdf">[Slides]</a>
-            </b><br/>
-            <i>Andrea Fioraldi, Alessandro Mantovani (EURECOM), Dominik Maier (TU Berlin), Davide Balzarotti (EURECOM)</i><br/>
+            <b>Bio</b>:
+            Cristian Cadar is a Professor in the Department of Computing at Imperial College London, where he leads the Software Reliability Group (<a href=http://srg.doc.ic.ac.uk>http://srg.doc.ic.ac.uk</a>), working on automatic techniques for increasing the reliability and security of software systems. Cristian's research has been recognised by several prestigious awards, including the IEEE TCSE New Directions Award, BCS Roger Needham Award, HVC Award, EuroSys Jochen Liedtke Award, and two test of time awards. Many of the research techniques he co-authored have been used in both academia and industry.  In particular, he is maintainer and developer of the KLEE symbolic execution system, a popular system with a large user base. Cristian has a PhD in Computer Science from Stanford University, and undergraduate and Master's degrees from the Massachusetts Institute of Technology.
+            <br/>
             <br/>
 
-            <b>Fine-Grained Coverage-Based Fuzzing
-                <a href="papers/Fine-Grained-Slides.pdf">[Slides]</a>
-            </b><br/>
-            <i>Bernard Nongpoh, Marwan Nour, Michaël Marcozzi, Sébastien Bardin (Université Paris Saclay)</i>
+            <!--<b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
+            <br/><br/>-->
+
+            <div style="color:#808080"><i>Session Chair: TBA</i></div>
         </td></tr>
     </table>
     <table>
         <tr>
             <td class="date">
-                10:40am
+                10:00am
             </td>
             <td class="title">
                 Morning Break
@@ -206,7 +133,7 @@
     <table>
         <tr>
             <td class="date" rowspan="2">
-                11:00am
+                10:30am
             </td>
             <td class="title-special">
                 <b>Fishbowl Conversation</b>
@@ -214,103 +141,93 @@
         </tr>
         <tr>
             <td class="abstract">
-                Group conversation about fuzzing and the pre-registration publication model.
+                Group conversation about fuzzing and related topics. More info will follow!
             </td>
         </tr>
-    </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                12:00pm
-            </td>
-            <td class="title-special">
-                Session 2
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <div style="color:#808080"><b>Session Chair</b>: Mathias Payer (EPFL)</div>
-            </td>
-        </tr>
-        <tr><td class="abstract">
-            <b>First, Fuzz the Mutants</b><br/>
-            <i>Alex Groce, Goutamkumar Kalburgi (Northern Arizona Univeristy), Claire Le Goues, Kush Jain (Carnegie Mellon University), Rahul Gopinath (Saarland University)</i><br/>
-            <br/>
-            
-            <b>Generating Test Suites for GPU Instruction Sets through Mutation and Equivalence Checking
-                <a href="papers/GPU-Slides.pdf">[Slides]</a>
-            </b><br/>
-            <i>Shoham Shitrit, Sreepathi Pai (University of Rochester)</i>
-        </td></tr>
     </table>
     <table>
         <tr>
             <td class="date" rowspan="2">
-                12:40pm
+                11:30am
+            </td>
+            <td class="title-special">
+                <b>Reflections on preregistration-based publication model</b>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                12:00pm
             </td>
             <td class="title">
                 Lunch Break
             </td>
         </tr>
-        <tr>
-            <td class="abstract">
-                (Note that we leave a long time for lunch break to make the afternoon session more Asia friendly.)
-            </td>
-        </tr>
     </table>
     <table>
         <tr>
             <td class="date" rowspan="3">
-                3:00pm
+                1:30pm
             </td>
             <td class="title-special">
-                <b>Keynote 2</b>: The Evolution of Fuzzing in Finding the Unknowns
+                <b>Keynote 2</b>: Rich coverage signal and the consequences for scaling
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Abhishek Aarya (Google)
+                Kostya Serebryany (Google)
+            </td>
+        </tr>
+        <tr><td class="abstract">
+            <b>Abstract</b>:
+            Most existing fuzzing tools use edge coverage to identify interesting inputs and guide the expansion of the corpus. This coverage signal is convenient because it is bounded in size. Once fuzzing discovers all reachable edges, however, this form of coverage stops being useful. To keep providing a useful guidance to the fuzzer we can add additional signals, such as call stacks, bounded execution paths, arguments to comparison instructions, and signals derived from anomaly detection. Most of these signals can generate a large amount of data that the fuzzer needs to deal with which can have a drastic impact on the computational resources required. It is still tempting to use these rich signals. In the SiliFuzz project we have used rich coverage signals to uncover bugs that were hidden otherwise. In this talk we will discuss approaches to scaling fuzzing with rich coverage signals in a new fuzzing engine called Centipede.
+            <br/><br/>
+
+            <b>Bio</b>:
+            Konstantin (Kostya) Serebryany is a Software Engineer at Google. His team develops and deploys dynamic testing tools, such as AddressSanitizer, MemorySanitizer, ThreadSanitizer, and libFuzzer. Prior to joining Google in 2007, Konstantin spent 4 years at Elbrus/MCST working for Sun compiler lab and then 3 years at Intel Compiler Lab. Konstantin holds a PhD from mesi.ru and a M.S. from msu.ru.
+            <br/>
+            <br/>
+
+            <!--<b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
+            <br/><br/>-->
+
+            <div style="color:#808080"><i>Session Chair: TBA</i></div>
+        </td></tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                2:15pm
+            </td>
+            <td class="title-special">
+                Paper Session 1
             </td>
         </tr>
         <tr>
-            <td class="abstract">
-                <b>Abstract</b>: Fuzzing is a highly effective technique that finds security
-                vulnerabilities, stability bugs and correctness issues in a fully 
-                automated way. Over the last decade, it has rapidly evolved from being 
-                an experimental tool used by security teams to becoming a critical 
-                component of the software development life cycle and part of NIST’s 
-                standards for software verification. This talk will give insights into
-                this journey of fuzzing innovation, from a dumb, blackbox testing 
-                technique to a smart, generational whitebox one, augmented with 
-                effective memory instrumentation. It will also shed light on the recent
-                efforts to standardize fuzzer benchmarking and scaling research efforts
-                in the community.<br/>
-                <br/>
-
-                <b>Bio</b>: Abhishek Arya is a Principal Engineer and head of the 
-                Google Open Source Security Team. His team has been a key contributor 
-                to various security engineering efforts inside the Open Source Security
-                Foundation (OpenSSF). This includes the Fuzzing Tools (Fuzz-Introspector),
-                Supply Chain Security Framework (SLSA, Sigstore), Security Risk Measurement
-                Platform (Scorecards, AllStar), Vulnerability Management Solution (OSV) and
-                Package Analysis project. Prior to this, he was a founding member of the
-                Google Chrome Security Team and built OSS-Fuzz, a highly scaled and automated
-                fuzzing infrastructure that fuzzes all of Google and Open Source. His team
-                also maintains FuzzBench, a free fuzzer benchmarking service that helps the
-                community rigorously evaluate fuzzing research and make it easier to adopt.<br/>
-                <br/>
-
-                <b><a href="papers/Arya-keynote-FUZZING-22.pdf">[Slides]</a></b>
-                <br/><br/>
-
-                <div style="color:#808080"><i>Session Chair: Cristian Cadar (Imperial College London)</i></div>
+            <td class="speaker">
+                <div style="color:#808080"><b>Session Chair</b>: TBA</div>
             </td>
         </tr>
+        <tr><td class="abstract">
+            <b>CrabSandwich: Fuzzing Rust with Rust</b><br/>
+            <i>Addison Crump (CISPA), Dongjia Zhang (EURECOM), Syeda Mahnur Asif (CISPA), Dominik Maier (TU Berlin), Andrea Fioraldi (EURECOM), Thorsten Holz (CISPA), Davide Balzarotti (EURECOM)</i><br/>
+            <br/>
+
+            <b>Novelty not Found: Adaptive Fuzzer Restarts to Improve Input Space Coverage</b><br/>
+            <i>Nico Schiller, Xinyi Xu, Lukas Bernhard, Nils Bars, Moritz Schloegel, Thorsten Holz (CISPA Helmholtz Center for Information Security)</i><br/>
+            <br/>
+
+            <b>Grammar Mutation for Testing Input Parsers</b><br/>
+            <i>Bachir Bendrissou, Cristian Cadar, Alastair Donaldson (Imperial College London)</i><br/>
+
+        </td></tr>
     </table>
     <table>
         <tr>
             <td class="date">
-                3:50pm
+                3:00pm
             </td>
             <td class="title">
                 Afternoon Break
@@ -320,47 +237,51 @@
     <table>
         <tr>
             <td class="date" rowspan="3">
-                4:00pm
+                3:30pm
             </td>
             <td class="title-special">
-                Session 3
+                Paper Session 2
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <div style="color:#808080"><b>Session Chair</b>: Marcel Böhme (MPI-SP and Monash University)</div>
+                <div style="color:#808080"><b>Session Chair</b>: TBA</div>
             </td>
         </tr>
         <tr><td class="abstract">
-            <b>Fuzzing Configurations of Program Options
-                <a href="papers/Config-Slides.pdf">[Slides]</a>
-            </b><br/>
-            <i>Zenong Zhang (University of Texas at Dallas), George Klees (University of Maryland), Eric Wang (Poolesville High School), Michael Hicks (University of Maryland), Shiyi Wei (University of Texas at Dallas)</i><br/>
+
+            <b>Large Language Models for Fuzzing Parsers</b><br/>
+            <i>Joshua Ackerman, George Cybenko (Dartmouth College)</i><br/>
             <br/>
 
-            <b>NSFuzz: Towards Efficient and State-Aware Network Service Fuzzing
-                <a href="papers/NSFuzz-Slides.pdf">[Slides]</a>
+            <b>Beyond The Coverage Plateau - A Comprehensive Study of Fuzz Blockers</b><br/>
+            <i>Wentao Gao, Van-Thuan Pham (University of Melbourne), Dongge Liu, Oliver Chang (Google), Toby Murray, Benjamin Rubinstein (University of Melbourne)</i><br/>
+            <br/>
+            
+            <b>DiPri: Distance-based Seed Prioritization for Greybox Fuzzing
+                <!--<a href="papers/DissectingAFL-Slides.pdf">[Slides]</a>-->
             </b><br/>
-            <i>Shisong Qin (Tsinghua University), Fan Hu (State Key Laboratory of Mathematical Engineering and Advanced Computing), Bodong Zhao, Tingting Yin, Chao Zhang (Tsinghua University)</i><br/>
+            <i>Ruixiang Qian, Quanjun Zhang, Chunrong Fang, Zhenyu Chen (Nanjing University)</i><br/>
             <br/>
 
-            <b>datAFLow: Towards a Data-Flow-Guided Fuzzer
-                <a href="papers/Dataflow-Slides.pdf">[Slides]</a>
-            </b></br>
-            <i>Adrian Herrera (Australian National University), Mathias Payer (EPFL), Antony Hosking (Australian National University)</i>
+            <b>InFuzz: An Interactive Tool for Enhancing Efficiency in Fuzzing through Visual Bottleneck Analysis</b><br/>
+            <i>Qian Yan, Minhuan Huang, Huayang Cao, Shuaibing Lu (National Key Laboratory of Science and Technology on Information System Security)</i><br/>
+            <br/>
+
+            <b>Multi-phase Parallel Fuzzer</b><br/>
+            <i>Taotao Gu, Tong Wang, Xiang Li, Shuaibing Lu, Yuanping Nie, Zhaowei Zhang, Xiaohui Kuang, Gang Zhao (National Key Laboratory of Science and Technology on Information System Security)</i><br/>
         </td></tr>
     </table>
     <table>
         <tr>
             <td class="date">
-                5:00pm
+                4:45pm
             </td>
             <td class="title">
                 Concluding remarks
             </td>
         </tr>
     </table>
-    -->
 
     <table class="footer">
         <tr>
