@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <meta name="description" content="The 1st International Fuzzing Workshop (FUZZING) 2022 welcomes all researchers, 
+        scientists, engineers and practitioners to present their latest research findings,
+        empirical analyses, techniques, and applications in the area of fuzzing and 
+        software testing for automated bug finding.">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Fuzzing, preregistration, software testing, benchmarking">
+    <title>FUZZING'23 Workshop Program</title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="assets/banner_issta2023.jpg" alt="Fuzzing'23">
+        <div class="top-left">
+            <span class="title1">Fuzzing</span> <span class="title2">workshop</span> <span class="year">2023</span>
+        </div>
+        <div class="bottom-right">
+            <!--April 24, 2022 <br> Co-located with ISSTA'23 @ Seattle, Washington, USA-->
+            <br>Co-located with ISSTA'23 @ Seattle, Washington, USA
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a class="current" title="Fuzzing'23 Home Page" href="index.html">Home</a>
+            </td>
+            <!--
+                 <td class="navigation">
+                 <a title="Register for Fuzzing'23" href="registration">Registration</a>
+                 </td>
+            -->
+            
+            <td class="navigation">
+                <a title="Workshop Program" href="program.html">Program</a>
+            </td>
+            
+            <!-- <td class="navigation">
+                 <a title="Directions to the Conference" href="directions">Directions</a>
+                 </td>
+            -->
+
+            <td class="navigation">
+                <a title="Important Dates" href="index.html#dates">Dates</a>
+            </td>
+            <td class="navigation">
+                <a title="FAQ" href="index.html#faq">FAQ</a>
+            </td>
+            
+            <!--<td class="navigation">
+                 <a title="Submission Guidelines" href="index.html#guides">Submission</a>
+            </td>
+            -->
+
+            <td class="navigation">
+                <a title="Program Committee" href="index.html#pc">Program Committee</a>
+            </td>
+
+            <td class="navigation">
+                <a title="Latest Edition" href="https://fuzzingworkshop.github.io">Latest Edition</a>
+            </td>
+        </tr>
+    </table>
+
+
+    <h2>Program Schedule (Tentative)</h2>
+    <i>All times are local time in Seattle, WA, United States (GMT-7 / PDT).</i>
+
+    <br>
+    <br>
+
+
+    <table>
+        <tr>
+            <td class="date">
+                9:00am
+            </td>
+            <td class="title">
+                Welcome and Introductions
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                9:15am
+            </td>
+            <td class="title-special">
+                <b>Keynote 1</b>: Three Colours of Fuzzing: Reflections and Open Challenges
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Cristian Cadar (Imperial College London)
+            </td>
+        </tr>
+        <tr><td class="abstract">
+            <b>Abstract</b>:
+            In this talk, I will reflect on my experiences designing and applying different forms of fuzzing (whitebox, greybox and blackbox) to various  types of software (file processing applications, network servers, compilers, document readers, etc.) and software engineering problems (patch testing, test suite augmentation, refactoring, etc.)<br/>
+
+            While the goal of fuzzing is to find bugs, our objective as fuzzing researchers and practitioners should be to improve the reliability, security and quality of software.  I therefore argue that we need to pay closer attention to how fuzzing is integrated into the software development process and how we can use fuzzing to help with other software engineering tasks.
+            <br/><br/>
+
+            <b>Bio</b>:
+            Cristian Cadar is a Professor in the Department of Computing at Imperial College London, where he leads the Software Reliability Group (<a href=http://srg.doc.ic.ac.uk>http://srg.doc.ic.ac.uk</a>), working on automatic techniques for increasing the reliability and security of software systems. Cristian's research has been recognised by several prestigious awards, including the IEEE TCSE New Directions Award, BCS Roger Needham Award, HVC Award, EuroSys Jochen Liedtke Award, and two test of time awards. Many of the research techniques he co-authored have been used in both academia and industry.  In particular, he is maintainer and developer of the KLEE symbolic execution system, a popular system with a large user base. Cristian has a PhD in Computer Science from Stanford University, and undergraduate and Master's degrees from the Massachusetts Institute of Technology.
+            <br/>
+            <br/>
+
+            <!--<b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
+            <br/><br/>-->
+
+            <div style="color:#808080"><i>Session Chair: TBA</i></div>
+        </td></tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date">
+                10:00am
+            </td>
+            <td class="title">
+                Morning Break
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                10:30am
+            </td>
+            <td class="title-special">
+                <b>Fishbowl Conversation</b>
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Group conversation about fuzzing and related topics. More info will follow!
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                11:30am
+            </td>
+            <td class="title-special">
+                <b>Reflections on preregistration-based publication model</b>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                12:00pm
+            </td>
+            <td class="title">
+                Lunch Break
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                1:30pm
+            </td>
+            <td class="title-special">
+                <b>Keynote 2</b>: Rich coverage signal and the consequences for scaling
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                Kostya Serebryany (Google)
+            </td>
+        </tr>
+        <tr><td class="abstract">
+            <b>Abstract</b>:
+            Most existing fuzzing tools use edge coverage to identify interesting inputs and guide the expansion of the corpus. This coverage signal is convenient because it is bounded in size. Once fuzzing discovers all reachable edges, however, this form of coverage stops being useful. To keep providing a useful guidance to the fuzzer we can add additional signals, such as call stacks, bounded execution paths, arguments to comparison instructions, and signals derived from anomaly detection. Most of these signals can generate a large amount of data that the fuzzer needs to deal with which can have a drastic impact on the computational resources required. It is still tempting to use these rich signals. In the SiliFuzz project we have used rich coverage signals to uncover bugs that were hidden otherwise. In this talk we will discuss approaches to scaling fuzzing with rich coverage signals in a new fuzzing engine called Centipede.
+            <br/><br/>
+
+            <b>Bio</b>:
+            Konstantin (Kostya) Serebryany is a Software Engineer at Google. His team develops and deploys dynamic testing tools, such as AddressSanitizer, MemorySanitizer, ThreadSanitizer, and libFuzzer. Prior to joining Google in 2007, Konstantin spent 4 years at Elbrus/MCST working for Sun compiler lab and then 3 years at Intel Compiler Lab. Konstantin holds a PhD from mesi.ru and a M.S. from msu.ru.
+            <br/>
+            <br/>
+
+            <!--<b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
+            <br/><br/>-->
+
+            <div style="color:#808080"><i>Session Chair: TBA</i></div>
+        </td></tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                2:15pm
+            </td>
+            <td class="title-special">
+                Paper Session 1
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <div style="color:#808080"><b>Session Chair</b>: TBA</div>
+            </td>
+        </tr>
+        <tr><td class="abstract">
+
+            <b>Large Language Models for Fuzzing Parsers</b><br/>
+            <i>Joshua Ackerman, George Cybenko (Dartmouth College)</i><br/>
+            <br/>
+
+            <b>Novelty not Found: Adaptive Fuzzer Restarts to Improve Input Space Coverage</b><br/>
+            <i>Nico Schiller, Xinyi Xu, Lukas Bernhard, Nils Bars, Moritz Schloegel, Thorsten Holz (CISPA Helmholtz Center for Information Security)</i><br/>
+            <br/>
+
+            <b>Grammar Mutation for Testing Input Parsers</b><br/>
+            <i>Bachir Bendrissou, Cristian Cadar, Alastair Donaldson (Imperial College London)</i><br/>
+
+        </td></tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date">
+                3:00pm
+            </td>
+            <td class="title">
+                Afternoon Break
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                3:30pm
+            </td>
+            <td class="title-special">
+                Paper Session 2
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <div style="color:#808080"><b>Session Chair</b>: TBA</div>
+            </td>
+        </tr>
+        <tr><td class="abstract">
+
+            <b>CrabSandwich: Fuzzing Rust with Rust</b><br/>
+            <i>Addison Crump (CISPA), Dongjia Zhang (EURECOM), Syeda Mahnur Asif (CISPA), Dominik Maier (TU Berlin), Andrea Fioraldi (EURECOM), Thorsten Holz (CISPA), Davide Balzarotti (EURECOM)</i><br/>
+            <br/>
+
+            <b>Beyond The Coverage Plateau - A Comprehensive Study of Fuzz Blockers</b><br/>
+            <i>Wentao Gao, Van-Thuan Pham (University of Melbourne), Dongge Liu, Oliver Chang (Google), Toby Murray, Benjamin Rubinstein (University of Melbourne)</i><br/>
+            <br/>
+            
+            <b>DiPri: Distance-based Seed Prioritization for Greybox Fuzzing
+                <!--<a href="papers/DissectingAFL-Slides.pdf">[Slides]</a>-->
+            </b><br/>
+            <i>Ruixiang Qian, Quanjun Zhang, Chunrong Fang, Zhenyu Chen (Nanjing University)</i><br/>
+            <br/>
+
+            <b>InFuzz: An Interactive Tool for Enhancing Efficiency in Fuzzing through Visual Bottleneck Analysis</b><br/>
+            <i>Qian Yan, Minhuan Huang, Huayang Cao, Shuaibing Lu (National Key Laboratory of Science and Technology on Information System Security)</i><br/>
+            <br/>
+
+            <b>Multi-phase Parallel Fuzzer</b><br/>
+            <i>Taotao Gu, Tong Wang, Xiang Li, Shuaibing Lu, Yuanping Nie, Zhaowei Zhang, Xiaohui Kuang, Gang Zhao (National Key Laboratory of Science and Technology on Information System Security)</i><br/>
+        </td></tr>
+    </table>
+    <table>
+        <tr>
+            <td class="date">
+                4:45pm
+            </td>
+            <td class="title">
+                Concluding remarks
+            </td>
+        </tr>
+    </table>
+
+    <table class="footer">
+        <tr>
+            <td class="footer">Design by <a target="_blank" href="http://math.ucr.edu/~mpierce/">Mike Pierce</a></td> 
+            <td class="footer">&copy; Conference Organizers</td> 
+        </tr>
+    </table>
+
+</body>
+
+</html>
+
