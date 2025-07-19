@@ -5,61 +5,49 @@
     <base href=".">
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <meta name="description" content="The 1st International Fuzzing Workshop (FUZZING) 2022 welcomes all researchers, 
+    <meta name="description" content="The 4th International Fuzzing Workshop (FUZZING) 2025 welcomes all researchers,
         scientists, engineers and practitioners to present their latest research findings,
-        empirical analyses, techniques, and applications in the area of fuzzing and 
+        empirical analyses, techniques, and applications in the area of fuzzing and
         software testing for automated bug finding.">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Fuzzing, preregistration, software testing, benchmarking">
-    <title>FUZZING'23 Workshop Program</title>
+    <title>FUZZING'25 Workshop Program</title>
 </head>
 
 <body>
 
     <div class="banner">
-        <img src="assets/banner_issta2023.jpg" alt="Fuzzing'23">
+        <img src="assets/banner_issta2025.jpg" alt="FUZZING'25">
         <div class="top-left">
-            <span class="title1">Fuzzing</span> <span class="title2">workshop</span> <span class="year">2023</span>
+            <span class="title1">Fuzzing</span> <span class="title2">workshop</span> <span class="year">2025</span>
         </div>
         <div class="bottom-right">
-            <!--April 24, 2022 <br> Co-located with ISSTA'23 @ Seattle, Washington, USA-->
-            <br>Co-located with ISSTA'23 @ Seattle, Washington, USA
+            <br>Co-located with ISSTA'25 @ Trondheim, Norway
         </div>
     </div>
 
     <table class="navigation">
         <tr>
             <td class="navigation">
-                <a class="current" title="Fuzzing'23 Home Page" href="index.html">Home</a>
+                <a class="current" title="FUZZING'25 Home Page" href="index.html">Home</a>
             </td>
-            <!--
-                 <td class="navigation">
-                 <a title="Register for Fuzzing'23" href="registration">Registration</a>
-                 </td>
-            -->
             
             <td class="navigation">
                 <a title="Workshop Program" href="program.html">Program</a>
             </td>
             
-            <!-- <td class="navigation">
-                 <a title="Directions to the Conference" href="directions">Directions</a>
-                 </td>
-            -->
-
             <td class="navigation">
                 <a title="Important Dates" href="index.html#dates">Dates</a>
             </td>
             <td class="navigation">
                 <a title="FAQ" href="index.html#faq">FAQ</a>
             </td>
-            
-            <!--<td class="navigation">
-                 <a title="Submission Guidelines" href="index.html#guides">Submission</a>
-            </td>
-            -->
 
+            <!-- <td class="navigation">
+                 <a title="Submission Guidelines" href="index.html#guides">Submission</a>
+            </td> -->
+           
             <td class="navigation">
                 <a title="Program Committee" href="index.html#pc">Program Committee</a>
             </td>
@@ -71,8 +59,9 @@
     </table>
 
 
-    <h2>Program Schedule (Tentative)</h2>
-    <i>All times are local time in Seattle, WA, United States (GMT-7 / PDT).</i>
+    <h2>Program Schedule </h2>
+    <i>All times are local time in Trondheim, Norway (GMT+2 / CEST).</i>
+    <i>Also see the official <a href="https://conf.researchr.org/home/issta-2025/fuzzing-2025#program">ISSTA'25 program</a>.</i>
 
     <br>
     <br>
@@ -91,199 +80,215 @@
     <table>
         <tr>
             <td class="date" rowspan="3">
-                9:15am
+                9:10am
             </td>
             <td class="title-special">
-                <b>Keynote 1</b>: Three Colours of Fuzzing: Reflections and Open Challenges
+                <b>Keynote 1</b>: Constraining Fuzzing without Paying Too Much
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Cristian Cadar (Imperial College London)
+                Miryung Kim (UCLA and Amazon Web Services)
             </td>
         </tr>
         <tr><td class="abstract">
             <b>Abstract</b>:
-            In this talk, I will reflect on my experiences designing and applying different forms of fuzzing (whitebox, greybox and blackbox) to various  types of software (file processing applications, network servers, compilers, document readers, etc.) and software engineering problems (patch testing, test suite augmentation, refactoring, etc.)<br/>
+            Fuzzing currently has two flavors—an existing generic, domain-agnostic, solution such as AFL, or developers often build a custom generator such as “X”-Smith that is more effective for a specialized domain such as C, SQL, and MLIR. However, constructing a custom fuzzer such as “X”-Smith generally requires significant developer or engineering effort, measured in person-months.
 
-            While the goal of fuzzing is to find bugs, our objective as fuzzing researchers and practitioners should be to improve the reliability, security and quality of software.  I therefore argue that we need to pay closer attention to how fuzzing is integrated into the software development process and how we can use fuzzing to help with other software engineering tasks.
+            In this talk, I will reflect on my group’s experience of designing custom fuzzers for data-intensive computing and heterogeneous hardware domains. I will discuss how we had to encode domain-specific constraints, custom feedback guidance, custom search strategies, and custom mutation operators to make the fuzzing solutions effective for a specialized domain. Then, reflecting on this manual specialization effort, I will propose a new direction on how we should strive to bootstrap a custom fuzzer, automatically or semi-automatically, without too much manual effort.
+
+            Toward this vision of “bootstrapping a custom fuzzer without paying too much”, I will share several ongoing effort to find the right balance between the universality of a fuzzer and its effectiveness in a specialized domain: (1) custom mutation synthesis from examples, (2) automated grammar refinement to constrain fuzzing, (3) LLM-guided constraint-generation for mutation, and (4) a lightweight DSL for context-guided input generation.
             <br/><br/>
 
             <b>Bio</b>:
-            Cristian Cadar is a Professor in the Department of Computing at Imperial College London, where he leads the Software Reliability Group (<a href=http://srg.doc.ic.ac.uk>http://srg.doc.ic.ac.uk</a>), working on automatic techniques for increasing the reliability and security of software systems. Cristian's research has been recognised by several prestigious awards, including the IEEE TCSE New Directions Award, BCS Roger Needham Award, HVC Award, EuroSys Jochen Liedtke Award, and two test of time awards. Many of the research techniques he co-authored have been used in both academia and industry.  In particular, he is maintainer and developer of the KLEE symbolic execution system, a popular system with a large user base. Cristian has a PhD in Computer Science from Stanford University, and undergraduate and Master's degrees from the Massachusetts Institute of Technology.
+            Miryung Kim is a Professor and a Vice Chair of Graduate Studies in UCLA Computer Science. She directs Software Engineering and Analysis Laboratory. She helped define the new area of Software Engineering for Data Intensive Computing (SE4DA and SE4ML). She works on automated testing and debugging for Apache Spark and developer tools for heterogeneous computing. She conducted the first systematic study of refactoring practices in industry and quantified rearchitecting benefits at Microsoft using Windows version history. She conducted the largest scale study of data scientists in industry. Her group’s Java bytecode debloating JDebloat made a tech transfer impact to Navy.
+
+            She received her BS from KAIST and MS and PhD from University of Washington under the supervision of David Notkin. She was an Assistant Professor at the University of Texas at Austin, moved to UCLA as an Associate Professor with tenure in 2014, and was promoted to a Full Professor in 2019. She spent time as a visiting researcher at Microsoft Research. She is an Amazon Scholar at Amazon Web Services.
+
+            She produced 6 professors (Columbia, Purdue, two at Virginia Tech, etc). For her impact on nurturing the next generation of academics, she received the ACM SIGSOFT Influential Educator Award. She is a Program Co-Chair of ESEC/FSE 2022, one of top 2 conferences in SE. She is a Keynote Speaker at ASE 2019 and ISSTA 2022. She gave Distinguished Lectures at CMU, UIUC, UMN, UC Irvine, etc. She is an ACM Distinguished Member.
             <br/>
             <br/>
 
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L90MBb6NLBE?si=R6aYfUH5EHoRk94D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <!-- <b><a href="https://youtu.be/L90MBb6NLBE">[Recording]</a></b> -->
             <!--<b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
             <br/><br/>-->
 
-            <div style="color:#808080"><i>Session Chair: TBA</i></div>
+            <div style="color:#808080"><i>Session Chair: Yannic Noller</i></div>
         </td></tr>
     </table>
+
+    <table>
+        <tr>
+            <td class="date" rowspan="3">
+                10:00am
+            </td>
+            <td class="title-special">
+                Paper Session: Fuzzing Nuggets
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <div style="color:#808080"><b>Session Chair</b>: Yannic Noller</div>
+            </td>
+        </tr>
+        <tr><td class="abstract">
+
+            <b>Personalized Fuzzing: A Case Study with the FANDANGO Fuzzer on a GNSS Module</b><br/>
+            <i></i>Stephan Neuhaus, José Antonio Zamudio Amaya, Andreas Zeller</i><br/>
+            <br/>
+
+            <b>Hybrid Fuzzing of Infrastructure as Code Programs</b><br/>
+            <i>Emilio Coppa, Daniel Sokolowski, Guido Salvaneschi</i><br/>
+            <br/>
+
+            <b>Towards Fuzzing Zero-Knowledge Proof Circuits</b><br/>
+            <i>Stefanos Chaliasos, Imam Al-Fath, Alastair F. Donaldson</i><br/>
+
+        </td></tr>
+    </table>
+
     <table>
         <tr>
             <td class="date">
-                10:00am
+                10:30am
             </td>
             <td class="title">
                 Morning Break
             </td>
         </tr>
     </table>
+
     <table>
         <tr>
-            <td class="date" rowspan="2">
-                10:30am
+            <td class="date" rowspan="3">
+                11:00am
             </td>
             <td class="title-special">
-                <b>Fishbowl Conversation</b>
+                <b>Keynote 2</b>: Are you sure you belong in academia?
             </td>
         </tr>
         <tr>
-            <td class="abstract">
-                Group conversation about fuzzing and related topics. More info will follow!
+            <td class="speaker">
+                Will Wilson (Antithesis)
             </td>
         </tr>
+        <tr><td class="abstract">
+            <b>Abstract</b>: I too once lived in an ivory tower, pondering the deepest mysteries of the universe (in my occasional snatches of spare time between writing grant proposals and fighting with IRBs). Then I quit and went into industry instead. To my surprise, there was interesting research happening there. I was still able to ponder the mysteries of creation, and I was better paid, and there were no IRBs.
+                Is the modern research university a path dependent outcome, or is it what we’d come up with if we were designing from scratch? What are the pros and cons of an endowed chair vs. a sinecure at FAANG? Is being surrounded by credentialed colleagues pursuing the same questions as you less important in the age of the internet, or more? Do crass financial incentives ruin the integrity of the scientific process? Is industry still a place where you can do deep, foundational work?
+                As computer scientists, two career paths stretch out in front of us. How can you tell which one you belong on? Come to this talk and find out. You will also learn about the secret third career path for CS theorists, and the even more secret fourth one.
+
+            <br/><br/>
+
+            <b>Bio</b>:
+            Will Wilson is a failed mathematician who switched to programming because it seemed easier. He built distributed databases at FoundationDB, Apple, and Google. Along the way, he realized that computers are actually the enemy, and founded Antithesis to put them in their place.
+            <br/>
+            <br/>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qQGuQ_4V6WI?si=t96VHR-l15mAaq_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <!--<b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
+            <br/><br/>-->
+
+            <div style="color:#808080"><i>Session Chair: Laszlo Szekeres</i></div>
+        </td></tr>
     </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                11:30am
-            </td>
-            <td class="title-special">
-                <b>Reflections on preregistration-based publication model</b>
-            </td>
-        </tr>
-    </table>
+
     <table>
         <tr>
             <td class="date" rowspan="2">
                 12:00pm
+            </td>
+            <td class="title-special">
+                <b>Panel Discussion: Fuzzing in Research vs. Industry</b>
+            </td>
+            <tr>
+            <td class="speaker">
+                <div style="color:#808080"><b>Session Chair</b>: Laszlo Szekeres</div>
+            </td>
+        </tr>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td class="date" rowspan="2">
+                1:00pm
             </td>
             <td class="title">
                 Lunch Break
             </td>
         </tr>
     </table>
+
     <table>
         <tr>
             <td class="date" rowspan="3">
-                1:30pm
+                2:00pm
             </td>
             <td class="title-special">
-                <b>Keynote 2</b>: Rich coverage signal and the consequences for scaling
+                Paper Session: Main Track - Registered Reports
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                Kostya Serebryany (Google)
-            </td>
-        </tr>
-        <tr><td class="abstract">
-            <b>Abstract</b>:
-            Most existing fuzzing tools use edge coverage to identify interesting inputs and guide the expansion of the corpus. This coverage signal is convenient because it is bounded in size. Once fuzzing discovers all reachable edges, however, this form of coverage stops being useful. To keep providing a useful guidance to the fuzzer we can add additional signals, such as call stacks, bounded execution paths, arguments to comparison instructions, and signals derived from anomaly detection. Most of these signals can generate a large amount of data that the fuzzer needs to deal with which can have a drastic impact on the computational resources required. It is still tempting to use these rich signals. In the SiliFuzz project we have used rich coverage signals to uncover bugs that were hidden otherwise. In this talk we will discuss approaches to scaling fuzzing with rich coverage signals in a new fuzzing engine called Centipede.
-            <br/><br/>
-
-            <b>Bio</b>:
-            Konstantin (Kostya) Serebryany is a Software Engineer at Google. His team develops and deploys dynamic testing tools, such as AddressSanitizer, MemorySanitizer, ThreadSanitizer, and libFuzzer. Prior to joining Google in 2007, Konstantin spent 4 years at Elbrus/MCST working for Sun compiler lab and then 3 years at Intel Compiler Lab. Konstantin holds a PhD from mesi.ru and a M.S. from msu.ru.
-            <br/>
-            <br/>
-
-            <!--<b><a href="papers/Zeller-keynote-FUZZING-22.pdf">[Slides]</a></b>
-            <br/><br/>-->
-
-            <div style="color:#808080"><i>Session Chair: TBA</i></div>
-        </td></tr>
-    </table>
-    
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
-                2:15pm
-            </td>
-            <td class="title-special">
-                Paper Session 1
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                <div style="color:#808080"><b>Session Chair</b>: TBA</div>
+                <div style="color:#808080"><b>Session Chair</b>: Marcel Böhme</div>
             </td>
         </tr>
         <tr><td class="abstract">
 
-            <b>Large Language Models for Fuzzing Parsers</b><br/>
-            <i>Joshua Ackerman, George Cybenko (Dartmouth College)</i><br/>
+            <b>On the Applicability of Benford’s Law to Detect Saturation in Fuzzing</b><br/>
+            <i>Jungwoo Lee, Haeun Lee, Sangjun Park, Sang Kil Cha</i><br/>
             <br/>
 
-            <b>Novelty not Found: Adaptive Fuzzer Restarts to Improve Input Space Coverage</b><br/>
-            <i>Nico Schiller, Xinyi Xu, Lukas Bernhard, Nils Bars, Moritz Schloegel, Thorsten Holz (CISPA Helmholtz Center for Information Security)</i><br/>
+            <b>Trailblazer: Practical End-to-end Web API Fuzzing</b><br/>
+            <i>Lianglu Pan, Shaanan Cohney, Toby Murray, Thuan Pham</i><br/>
             <br/>
 
-            <b>Grammar Mutation for Testing Input Parsers</b><br/>
-            <i>Bachir Bendrissou, Cristian Cadar, Alastair Donaldson (Imperial College London)</i><br/>
+            <b>Revisiting the Combination of Static Analysis Error Traces and Dynamic Symbolic Execution: A Potential Approach for True Positive Confirmation</b><br/>
+            <i>Yihua Xu, Chengyu Zhang, Geguang Pu</i><br/>
+            <br/>
+
+            <b>MQueez: Specification-Driven Fuzzing for MQTT Broker</b><br/>
+            <i>Xinpeng Liu, Qinying Wang, Peiyu Liu, Wenhai Wang, Shouling Ji</i><br/>
+            <br/>
+
+            <b>Shepherd: High-Precision Coverage Inference for Response-guided Blackbox Fuzzing</b><br/>
+            <i>Takuya Shimizu, Ryuichi Yoshizawa, Kaoru Otsuka, Yudai Fujiwara, Yuichi Sugiyama</i><br/>
+            <br/>
 
         </td></tr>
     </table>
+
     <table>
         <tr>
             <td class="date">
-                3:00pm
-            </td>
-            <td class="title">
-                Afternoon Break
-            </td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td class="date" rowspan="3">
                 3:30pm
             </td>
-            <td class="title-special">
-                Paper Session 2
+            <td class="title">
+                Concluding Remarks
             </td>
         </tr>
         <tr>
+            <td class="date"></td>
             <td class="speaker">
-                <div style="color:#808080"><b>Session Chair</b>: TBA</div>
+                <div style="color:#808080"><b>Session Chair</b>: Marcel Böhme</div>
             </td>
         </tr>
-        <tr><td class="abstract">
-
-            <b>CrabSandwich: Fuzzing Rust with Rust</b><br/>
-            <i>Addison Crump (CISPA), Dongjia Zhang (EURECOM), Syeda Mahnur Asif (CISPA), Dominik Maier (TU Berlin), Andrea Fioraldi (EURECOM), Thorsten Holz (CISPA), Davide Balzarotti (EURECOM)</i><br/>
-            <br/>
-
-            <b>Beyond The Coverage Plateau - A Comprehensive Study of Fuzz Blockers</b><br/>
-            <i>Wentao Gao, Van-Thuan Pham (University of Melbourne), Dongge Liu, Oliver Chang (Google), Toby Murray, Benjamin Rubinstein (University of Melbourne)</i><br/>
-            <br/>
-            
-            <b>DiPri: Distance-based Seed Prioritization for Greybox Fuzzing
-                <!--<a href="papers/DissectingAFL-Slides.pdf">[Slides]</a>-->
-            </b><br/>
-            <i>Ruixiang Qian, Quanjun Zhang, Chunrong Fang, Zhenyu Chen (Nanjing University)</i><br/>
-            <br/>
-
-            <b>InFuzz: An Interactive Tool for Enhancing Efficiency in Fuzzing through Visual Bottleneck Analysis</b><br/>
-            <i>Qian Yan, Minhuan Huang, Huayang Cao, Shuaibing Lu (National Key Laboratory of Science and Technology on Information System Security)</i><br/>
-            <br/>
-
-            <b>Multi-phase Parallel Fuzzer</b><br/>
-            <i>Taotao Gu, Tong Wang, Xiang Li, Shuaibing Lu, Yuanping Nie, Zhaowei Zhang, Xiaohui Kuang, Gang Zhao (National Key Laboratory of Science and Technology on Information System Security)</i><br/>
-        </td></tr>
     </table>
+
     <table>
         <tr>
             <td class="date">
-                4:45pm
+                3:35pm
             </td>
             <td class="title">
-                Concluding remarks
+                Afternoon Break (open end)
             </td>
         </tr>
     </table>
-
+    
     <table class="footer">
         <tr>
             <td class="footer">Design by <a target="_blank" href="http://math.ucr.edu/~mpierce/">Mike Pierce</a></td> 
